@@ -13,17 +13,9 @@ def countsort(array):
 
 	print("After increasing count:", count_array)
 
-	new_array = [0 for _ in range(len(array))]
+	new_array = [0 for _ in range(k + 1)]	
 
-	for i in range(len(array)):
-		element = array[i]
-		index = count_array[element]
-		if index < len(new_array):
-			new_array[index] = element
-			count_array[element] -= 1
-
-	print("sorted array:", new_array)
-
+	
 
 if __name__ == '__main__':
 	array = [1, 4, 1, 2, 7, 5, 2]
